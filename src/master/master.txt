@@ -1,0 +1,21 @@
+
+----------------------------------------
+1- Master
+
+The program is mainly composed by 4 functions: init(), accepter(), receiver(), flush_show().
+-init() for initialize the socket. 
+-accepter() is the function of a thread which will create a list of all the client.
+-receiver() will collect all the messages of drones: position,fuel, state, name.
+-flush_show() will print and refresh the arena in a precis frequency.
+
+
+
+
+
+
+
+
+
+
+-------
+

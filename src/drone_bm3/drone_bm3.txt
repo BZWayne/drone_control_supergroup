@@ -1,0 +1,24 @@
+### DRONE_BM3 ###
+## Made by: Bauyrzhan Zhakanov, Madi Nurmanov
+
+The drone which was done by us has been implemented with help of the work of Socket Task in the 2nd assignment.
+
+As we agreed in the supergroup, the master accepts 4 parameters:
+- group_name, x, y, fuel;
+
+The system cosiders: 127.0.0.1 with port number 7777
+
+To convert hostname into numeric address, 
+inet_pton() was usefull to integrate.
+
+The limits of the drone are:
+x: from 0 to 80
+y: from 0 to 40
+fuel: from 0 to 100
+
+Initially, drone has 100 fuel, but on every iteration drone loses -2.0 fuel. If it is close to the 10 meters, 
+then drone extracts -1 fuel. Drone choses random direction for movement.
+
+The server sends 0 or 1:
+0: means that movement for the robot is declined, and we need to put new numbers
+1: means that the movement is accepted 

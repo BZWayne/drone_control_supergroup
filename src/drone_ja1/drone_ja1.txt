@@ -1,0 +1,17 @@
+The program simulates a drone moving in the environment. The drone is one of the six drones moving in the environment. The master program communicates with all drones and check if the trajectories of all drones to prevent collision. 
+#########
+Communication protocol - IPC Sockets. IP: 127.0.0.1 Port: 7777.
+Each message is composed of four components: [group], [x], [y], [fuel]
+Where group is a char, and x,y,fuel variables are floats. 
+After sending this message, the response comes from the master. If the response is 1, then we can move to the desired position, 0 means we have to stay or choose another direction.
+
+#######
+Drone JA1
+
+Our drone is capable of travelling at maximum 0.5m per step. There are 8 directions available for the drone - North, East, West, South, North-West, North-East, South-West, South-East.
+The direction is chosen randomly, and it changes after each 10 steps. 
+Also, the randomness in the traveling exists due to wind. Wind can blow the drone and shifts its coordinates. This happens with 30% probability. 
+
+The starting position of the drone is [70,30]. The environment boundaries are defined as follows: x belongs to [0; 80]; y belongs to [0; 40].
+At the start, the drone has full fuel. However, after each movement, the fuel is linearly decreased by 1%. After, the fuel measurement reaches 3%, the drone starts to land and stays still afterwards.
+

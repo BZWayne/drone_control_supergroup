@@ -1,0 +1,11 @@
+Compilation (Drone group YH11) 
+gcc -o drone drone.c
+You have to start the ./master first, then
+./drone [X] [Y].
+Development of code
+In the first step: we implemented a function that chooses a direction between 8 directions.
+In the second step: a tablet_size has been created in which there is a rand () function, it practically chooses a random number between 1 and 8. 
+Each issue is dedicated to one address. So every time drone takes a number and chooses direction.
+We used argv () to send the x,y coordinates.
+In the third step: we implemented the socket to communicate with server.The type of communication is SOCK_STREAM.
+In the fourth step: created a variable named fuel to indicate the amount of drone fuel that decreases with a negative counter every time the drone makes a new trip and is checked at the beginning of each trip, if it equals zero the drone doesn't move anymore.

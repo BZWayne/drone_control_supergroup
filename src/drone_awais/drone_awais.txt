@@ -1,0 +1,11 @@
+Advanced Robot Programming - Third Assignment
+-------------------Drone---------------------
+This is the done part of the thrid assignemnt. 
+To develop a concurrent program composed by 6 processes, communicating through sockets. This is one of the processes whose aim is to develop a drone by using previous concepts.
+After executing and making the executable of the drone, We must need to run the executable with it's suitable arrguments in order to display this drone in the environment that has been established by the master process.
+The whole connection is being established by using sockets. 
+This drone is one of the socket clients that make request to socket server at specific IP Address and port number in our case it is 7777.
+Finally, The drone will move arround in the environment and it has the limited fuel which will end gradually which, in result, cause in the declining or decrementing the robot position and when it comes to end it will be grounded.
+
+
+
