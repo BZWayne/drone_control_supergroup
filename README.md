@@ -19,7 +19,7 @@ The master is opened when the “./run” command is executed. The master is the
 
 ## Installation
 ```
-git clone https://github.com/BZWayne/arp_supergroup
+git clone https://github.com/BZWayne/arp_supergroup.git
 ```
 ```
 chmod +x *
